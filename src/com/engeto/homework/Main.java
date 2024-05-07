@@ -3,6 +3,7 @@ package com.engeto.homework;
 import java.math.BigDecimal;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.time.LocalDate;
 
 public class Main {
 
@@ -57,8 +58,9 @@ public class Main {
     }
 
     public static class Biomrkev {
-        String firstNameLastName = "Emil Skočdopole", dateOfBirth = "1.1.1999", cityOfResidence = "Senohrábky", plateNumber = "8SA 5826", ipAddress = "192.168.1.1";
+        String firstNameLastName = "Emil Skočdopole", cityOfResidence = "Senohrábky", plateNumber = "8SA 5826", ipAddress = "192.168.1.1";
         double numberOfContracts = 5, salesInTons = 138, consumption = 5.7;
+        LocalDate dateOfBirth = LocalDate.of(1999,2,1);
         InetAddress ipAddressTest; // pouze zkouška Inet
 
         {
@@ -90,6 +92,7 @@ public class Main {
         ukol9();
 
         System.out.println("Průměrné prodané množství biomrkve na kontrakt je: "+Biomrkev.salesPerContractAVG+ " tun.");
+
 
 
 
