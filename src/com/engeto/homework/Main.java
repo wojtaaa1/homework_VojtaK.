@@ -59,7 +59,8 @@ public class Main {
 
     public static class Biomrkev {
         String firstNameLastName = "Emil Skočdopole", cityOfResidence = "Senohrábky", plateNumber = "8SA 5826", ipAddress = "192.168.1.1";
-        double numberOfContracts = 5, salesInTons = 138, consumptionOfGasoline = 5.7;
+        int numberOfContracts = 5;
+        double salesInTons = 138, consumptionOfGasoline = 5.7;
         LocalDate dateOfBirth = LocalDate.of(1999,2,1);
         InetAddress ipAddressTest; // pouze zkouška Inet
 
@@ -91,7 +92,11 @@ public class Main {
         ukol8();
         ukol9();
 
+
         System.out.println("Průměrné prodané množství biomrkve na kontrakt je: "+Biomrkev.salesPerContractAVG+ " tun.");
+
+
+
 
 
 
